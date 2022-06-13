@@ -7,7 +7,7 @@ addons:
 
 install:
   - mkdir -p ./third_party/mason
-  - curl -sSfL https://github.com/mapbox/mason/archive/v0.19.0.tar.gz | tar --gunzip --extract --strip-components=1 --directory=./third_party/mason
+  - curl -sSfL https://github.com/mapbox/mason/archive/v0.23.0.tar.gz | tar --gunzip --extract --strip-components=1 --directory=./third_party/mason
   - curl -Ls https://mapbox-release-engineering.s3.amazonaws.com/mbx-ci/latest/mbx-ci-linux-amd64 > mbx-ci && chmod 755 ./mbx-ci
   - npm install --build-from-source
   
